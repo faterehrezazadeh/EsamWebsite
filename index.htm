@@ -138,12 +138,230 @@
 
         }
 
-        #center>.top>.center-top {
-            border: 1px solid red;
-            width: 85%;
-            height: 1000px;
-            margin: auto;
+        
 
+        #center>.top>#slider {
+
+            width: 850px;
+            height: 250px;
+            margin: 1px auto;
+
+            position: relative;
+
+
+        }
+
+        #center>.top>#slider>#gal {
+        
+            width: 500%;
+            height: 100%;
+
+            transition: 0.5s;
+            position: relative;
+            left: 0%;
+        }
+
+        #center>.top>#slider>#gal>.items {
+            width: 120px;
+            height: 100%;
+            float: left;
+            text-align: center;
+            font-family: sans;
+            margin-right: 30px;
+            margin-top: 50px;
+        }
+
+        #center>.top>#slider>#gal>.items>img {
+            width: 70%;
+            background: rgba(245, 245, 245, 1);
+            padding: 15px;
+            border-radius: 100%;
+        }
+
+        .miniSlider {
+           
+
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            direction: ltr;
+        }
+
+        .miniSlider>.gal {
+            
+            width: 500%;
+            height: 100%;
+
+            transition: 0.5s;
+            position: relative;
+            left: 0%;
+        }
+
+        .miniSlider>.gal>.items {
+            width: 200px;
+            height: 95%;
+            float: left;
+
+            text-align: center;
+            direction: rtl;
+            font-family: sans;
+            border: 1px solid #ddd;
+            margin-right: 10px;
+            border-radius: 5px;
+
+            position: relative;
+        }
+
+        @font-face {
+            src: url("fonts/IranSans.ttf");
+            font-family: sans;
+        }
+
+        .miniSlider>.gal>.items>img {
+            width: 70%;
+        }
+
+        .miniSlider>.gal>.title>img {
+            width: 95%;
+        }
+
+        .miniSlider>.gal>.items>.price {
+            color: green;
+        }
+
+        .miniSlider>.gal>.items>.off {
+            color: #fff;
+            background: red;
+            padding: 7px 10px;
+
+            position: absolute;
+            top: 0px;
+            left: 0;
+
+            border-radius: 50% 0 50% 0;
+        }
+
+        .miniSlider>.right {
+            transition: 0.2s;
+
+            background: url("../images/slider2/right.png") no-repeat 50%;
+            background-size: 70%;
+
+            width: 50px;
+            height: 70px;
+            cursor: pointer;
+
+            position: absolute;
+            top: 90px;
+            right: 0;
+        }
+
+        .miniSlider>.left {
+            transition: 0.2s;
+            background: url("../images/slider2/left.png") no-repeat 50%;
+            background-size: 70%;
+
+            width: 50px;
+            height: 70px;
+            cursor: pointer;
+
+            position: absolute;
+            top: 90px;
+            left: 0;
+        }
+        
+        .miniSlider2 {
+           
+
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            direction: ltr;
+        }
+
+        .miniSlider2>.gal {
+          
+            width: 500%;
+            height: 100%;
+
+            transition: 0.5s;
+            position: relative;
+            left: 0%;
+        }
+
+        .miniSlider2>.gal>.items {
+            width: 200px;
+            height: 95%;
+            float: left;
+
+            text-align: center;
+            direction: rtl;
+            font-family: sans;
+            border: 1px solid #ddd;
+            
+            margin-right: 10px;
+            border-radius: 5px;
+
+            position: relative;
+        }
+
+        @font-face {
+            src: url("fonts/IranSans.ttf");
+            font-family: sans;
+        }
+
+        .miniSlider2>.gal>.items>img {
+            width: 70%;
+        }
+
+        .miniSlider2>.gal>.title>img {
+            width: 95%;
+            height: 60%;
+        }
+
+        .miniSlider2>.gal>.items>.price {
+            color: green;
+        }
+
+        .miniSlider2>.gal>.items>.off {
+            color: #fff;
+            background: red;
+            padding: 7px 10px;
+
+            position: absolute;
+            top: 0px;
+            left: 0;
+
+            border-radius: 50% 0 50% 0;
+        }
+
+        .miniSlider2>.right {
+            transition: 0.2s;
+
+            background: url("../images/slider2/right.png") no-repeat 50%;
+            background-size: 70%;
+
+            width: 50px;
+            height: 70px;
+            cursor: pointer;
+
+            position: absolute;
+            top: 90px;
+            right: 0;
+        }
+
+        .miniSlider2>.left {
+            transition: 0.2s;
+            background: url("../images/slider2/left.png") no-repeat 50%;
+            background-size: 70%;
+
+            width: 50px;
+            height: 70px;
+            cursor: pointer;
+
+            position: absolute;
+            top: 90px;
+            left: 0;
         }
     </style>
 </head>
@@ -185,10 +403,89 @@
 
         </div>
         <div class="top">
-            <div class="center-top">
+            <div id="slider">
+
+                <div id="slider1" class="miniSlider">
+
+                    <div id="gal1" class="gal">
+
+
+                        <div class="items">
+                            <img src="esam/01.jpg" width="50px" height="170px">
+                            <h2> کتاب</h2>
+                            <span class="price"> 25000 ریال </span>
+                            <span class="off"> 30% </span>
+                        </div>
+
+                        <div class="items">
+                            <img src="esam/02.jpg" width="50px" height="170px">
+                            <h2> نمیدونم چیه </h2>
+                            <span class="price"> 25000 ریال </span>
+                            <span class="off"> 20% </span>
+                        </div>
+                       
+                        <div class="items">
+                            <img src="esam/03.jpg" width="50px" height="170px">
+                            <h2> کامپیوتر</h2>
+                            <span class="price"> 25000 ریال </span>
+                            <span class="off"> 20% </span>
+                        </div>
+                        <div class="items">
+                            <img src="esam/04.jpg" width="50px" height="170px">
+                            <h2> مدال </h2>
+                            <span class="price"> 25000 ریال </span>
+
+                        </div>
+                    </div>
+
+                    <div id="right1" class="right"> </div>
+                    <div id="left1" class="left"> </div>
+
+
+                </div>
+                <div id="slider1" class="miniSlider2">
+
+                    <div id="gal1" class="gal">
+
+
+                        <div class="items">
+                            <img src="esam/05.jpg" width="50px" height="170px">
+                            <h2> کتاب</h2>
+                            <span class="price"> 25000 ریال </span>
+                            <span class="off"> 30% </span>
+                        </div>
+
+                        <div class="items">
+                            <img src="esam/06.jpg" width="50px" height="170px">
+                            <h2> کتاب</h2>
+                            <span class="price"> 25000 ریال </span>
+                            <span class="off"> 50% </span>
+                        </div>
+                       
+                        <div class="items">
+                            <img src="esam/07.jpg" width="50px" height="170px">
+                            <h2> سند ماشین </h2>
+                            <span class="price"> 25000 ریال </span>
+                            <span class="off"> 10% </span>
+                        </div>
+                        <div class="items">
+                            <img src="esam/08.jpg" width="50px" height="170px">
+                            <h2> کتاب شیمی</h2>
+                            <span class="price"> 25000 ریال </span>
+
+                        </div>
+                    </div>
+
+                    <div id="right1" class="right"> </div>
+                    <div id="left1" class="left"> </div>
+
+
+                </div>
 
             </div>
+
         </div>
+    </div>
     </div>
 
 
